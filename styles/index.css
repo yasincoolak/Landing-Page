@@ -95,3 +95,24 @@ h1 {
 
 /* Links */
 
+/* Section Project */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 1px 1px rgb(255, 235, 224);
+    max-width: 18rem;
+    background-color: lightblue;
+    border-radius: 20%;
+    .project-text {
+       /* text-align: center; */
+       
+    }
+}
+
+.project img {
+    border-radius: 20%;
+}
+
+/* Footer */
