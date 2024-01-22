@@ -1,0 +1,82 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    background-color: beige;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Home Header */
+
+.home-header ul {
+    position: absolute;
+    list-style-type: none;
+    list-style: none;
+    top: 0px;
+    right: 0px;
+    /* margin: 5rem 0; */
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    li {
+        margin: 0 .5rem;
+    }
+
+}
+
+/* Page Header */
+
+.highlight{
+    
+}
+.page-header {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	/* z-index: 1; */
+	/* transform: translateY(-40%); */
+	margin: 0;
+	font-size: 2.5rem;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-me {
+    position: absolute;
+    top: 55%;
+    /* left: 20%;
+    right: 20%; */
+    margin: 1.5rem 3.5rem;
+
+}
+
+.page-header img {
+    display: block;
+    object-fit: cover;
+    padding: 0;
+}
+
+.home-header img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Links */
+
