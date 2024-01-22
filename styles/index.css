@@ -3,8 +3,8 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
-    color: rgb(0, 0, 0);
-    background-color: beige;
+    color: #A90432;
+    background-color: #C9DFF3;
 }
 
 h1,
@@ -18,6 +18,12 @@ h6 {
 
 /* Home Header */
 
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .home-header ul {
     position: absolute;
@@ -25,10 +31,8 @@ h6 {
     list-style: none;
     top: 0px;
     right: 0px;
-    /* margin: 5rem 0; */
     padding: 0;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     li {
         margin: 0 .5rem;
@@ -38,8 +42,8 @@ h6 {
 .home-header ul a {
     display: block;
     width: auto;
-    color: rgb(0, 0, 0);
-    background-color: lightblue;
+    color: #A90432;
+    box-shadow: 1px 1px 1px 1px #A90432;
     text-decoration: none;
     text-align: center;
     font-size: 1.125rem;
@@ -52,32 +56,38 @@ h6 {
 /* Page Header */
 
 .highlight{
-    
+    font-weight: bolder ;
 }
+
 .page-header {
     position: relative;
 }
 
 h1 {
     position: absolute;
-	top: 35%;
+	top: 25%;
 	left: 0;
 	right: 0;
 	/* z-index: 1; */
 	/* transform: translateY(-40%); */
 	margin: 0;
 	font-size: 2.5rem;
-	color: rgb(0, 0, 0);
+    font-weight: 700;
+	color: #A90432;
 	text-transform: uppercase;
 	text-align: center;
 }
 
 .about-me {
     position: absolute;
+    text-align: center;
+    /* max-width: 300px; */
     top: 55%;
-    /* left: 20%;
-    right: 20%; */
-    margin: 1.5rem 3.5rem;
+    font-size: 1.125rem;
+    margin: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* margin: 1.5rem 5rem; */
 
 }
 
@@ -97,22 +107,108 @@ h1 {
 
 /* Section Project */
 
+/* !!!Horizontal Line- Learned from stackoverflow!!! */
+h2 {
+    display: flex;
+    flex-direction: row;
+}
+h2::before, h2::after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 2px solid #A90432;
+    margin: auto 1rem;
+}
+h1:before {
+    margin-right: 10px 
+  }
+  h1:after {
+    margin-left: 10px
+  }
+
 .project {
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 1px 1px rgb(255, 235, 224);
+    box-shadow: 1px 1px #A90432;
     max-width: 18rem;
-    background-color: lightblue;
+    background-color: #C9DFF3;
     border-radius: 20%;
-    .project-text {
-       /* text-align: center; */
-       
-    }
+    margin: 1rem;
 }
 
 .project img {
     border-radius: 20%;
 }
 
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    /* gap: 1rem; */
+}
+
+/* Section Contact */
+.section-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-contact a {
+    display: block;
+    width: 10rem;
+    color: #A90432;
+    box-shadow: 1px 1px 1px 1px #A90432;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125rem;
+
+    border-radius: 25px;
+    margin: auto;
+}
+
+.section-contact p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: .5rem;
+}
+/* trying */
+.section-contact p {
+    color: #A90432;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
 /* Footer */
+
+footer {
+    background-color: #d3d3d3;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-bottom: 2px;
+    color: #000000;
+    
+    
+}
