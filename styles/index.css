@@ -16,12 +16,37 @@ h6 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.home-page {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Links */
+
+.projects-wrapper .project a:hover {
+    transform: scaleX(-1);
+    background-color: #C9DFF3;
+}
+a, a:visited {
+    color: #A90432;
+}
+a:not(.logo):hover, a:not(.logo):active {
+    background-color: #A90432;
+    color: #C9DFF3;
+}
+
+
+
 /* Home Header */
 
 .home-header {
+    padding: 0 .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    img {
+        padding-top: .5rem;
+    }
 }
 
 
@@ -42,7 +67,7 @@ h6 {
 .home-header ul a {
     display: block;
     width: auto;
-    color: #A90432;
+    /* color: #A90432; */
     box-shadow: 1px 1px 1px 1px #A90432;
     text-decoration: none;
     text-align: center;
@@ -98,7 +123,7 @@ h1 {
 .page-header img {
     display: block;
     object-fit: cover;
-    width: 1900px;
+    width: 1920px;
     height: 500px;
     padding: 0;
     margin: 0;
@@ -117,6 +142,7 @@ h1 {
 h2 {
     display: flex;
     flex-direction: row;
+    text-transform: uppercase;
 }
 h2::before, h2::after {
     content: " ";
@@ -135,58 +161,73 @@ h1:before {
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 1px 1px #A90432;
-    max-width: 18rem;
+    max-width: 15rem;
+    /* max-height: 30rem; */
+    box-shadow: 1px 5px #A90432;
+    /* max-width: 18rem; */
     background-color: #C9DFF3;
-    border-radius: 20%;
-    margin: 1rem;
+    border-radius: 5%;
+    margin: 2rem auto;
 }
 
 .project img {
-    border-radius: 20%;
+    border-radius: 5%;
+}
+
+.project-text {
+    padding: .5rem;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
     /* gap: 1rem; */
 }
 
+
 /* Media */
-@media (min-width: 426px) {
-    .about-me {
-        
-    }
+@media (min-width: 71rem) {
+    
 }
 
 /* Section Contact */
 .section-contact{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
-}
-.section-contact a {
-    display: block;
-    width: 10rem;
-    color: #A90432;
-    box-shadow: 1px 1px 1px 1px #A90432;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.125rem;
-
-    border-radius: 25px;
-    margin: auto;
+    flex-direction: column; */
+    margin: 2rem auto;
+    
 }
 
 .section-contact p {
     text-align: center;
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
 }
+
+.section-contact a {
+    display: block;
+    width: 12rem;
+    /* color: #A90432; */
+    box-shadow: 1px 1px 1px 1px #A90432;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125rem;
+
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
 
 
 /* type writer effect added!!
@@ -200,7 +241,7 @@ copy-paste from https://css-tricks.com/snippets/css/typewriter-effect/ */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .25em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
@@ -209,13 +250,13 @@ copy-paste from https://css-tricks.com/snippets/css/typewriter-effect/ */
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 50% }
+    to { width: 100% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange }
+    1% { border-color: #C9DFF3 }
   }
 /* !!!!!!!!!! */
 
