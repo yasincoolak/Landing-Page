@@ -1,5 +1,5 @@
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home-page {
@@ -67,7 +68,6 @@ a:not(.logo):hover, a:not(.logo):active {
 .home-header ul a {
     display: block;
     width: auto;
-    /* color: #A90432; */
     box-shadow: 1px 1px 1px 1px #A90432;
     text-decoration: none;
     text-align: center;
@@ -79,6 +79,10 @@ a:not(.logo):hover, a:not(.logo):active {
 }
 
 /* Page Header */
+
+.page-header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .highlight{
     font-weight: bolder ;
@@ -94,9 +98,6 @@ h1 {
 	top: 25%;
 	left: 0;
 	right: 0;
-	/* z-index: 1; */
-	/* transform: translateY(-40%); */
-	/* margin: 0; */
 	font-size: 2.5rem;
     font-weight: 700;
 	color: #A90432;
@@ -113,11 +114,6 @@ h1 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    /* margin: 1rem;
-    margin-left: 20%;
-    margin-right: 20%; */
-    /* margin: 1.5rem 5rem; */
-
 }
 
 .page-header img {
@@ -133,8 +129,6 @@ h1 {
     width: 50px;
     height: 50px;
 }
-
-/* Links */
 
 /* Section Project */
 
@@ -162,9 +156,7 @@ h1:before {
     flex-direction: column;
     text-align: center;
     max-width: 15rem;
-    /* max-height: 30rem; */
-    box-shadow: 1px 5px #A90432;
-    /* max-width: 18rem; */
+    box-shadow: 1px 3px #A90432;
     background-color: #C9DFF3;
     border-radius: 5%;
     margin: 2rem auto;
@@ -175,7 +167,11 @@ h1:before {
 }
 
 .project-text {
-    padding: .5rem;
+    padding-bottom: .5rem;
+}
+
+.project-type {
+    margin: .5rem;
 }
 
 .project-name {
@@ -190,7 +186,6 @@ h1:before {
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
-    /* gap: 1rem; */
 }
 
 
@@ -200,10 +195,8 @@ h1:before {
 }
 
 /* Section Contact */
+
 .section-contact{
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
     margin: 2rem auto;
     
 }
@@ -218,12 +211,10 @@ h1:before {
 .section-contact a {
     display: block;
     width: 12rem;
-    /* color: #A90432; */
     box-shadow: 1px 1px 1px 1px #A90432;
     text-decoration: none;
     text-align: center;
     font-size: 1.125rem;
-
     border-radius: 25px;
     margin: 0 auto;
 }
@@ -271,6 +262,4 @@ footer {
     margin-right: auto;
     padding-bottom: 2px;
     color: #000000;
-    
-    
 }
